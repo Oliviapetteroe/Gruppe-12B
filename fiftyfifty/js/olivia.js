@@ -1,16 +1,28 @@
-circle(170, 115, 65, "solid", "grey");
+//Canvas
 
-circle(150, 230, 85, "solid", "orange");
+circle(115, 170, 65, "solid", "grey");
 
-circle(250, 260, 100, "solid", "beige");
+circle(230, 150, 85, "solid", "orange");
 
-rectangle(390, 320, 90, 75, "solid", "black");
+circle(260, 250, 100, "solid", "beige");
 
-rectangle(170, 360, 60, 70, "solid", "darkgrey");
+rectangle(320, 390, 90, 75, "solid", "black");
 
-circle(230, 175, 75, "solid", "darkblue");
+rectangle(360, 170, 60, 70, "solid", "darkgrey");
+
+circle(175, 230, 75, "solid", "darkblue");
 
 
-rectangleSvg(20, 10, 50, 50, "teal");
+//SVG
 
-circleSvg(100, 100, 75, "pink");
+circleSvg(115, 170, 65, "solid", "grey");
+
+circleSvg(230, 150, 85, "solid", "orange");
+
+circleSvg(260, 250, 100, "solid", "beige");
+
+rectangleSvg(320, 390, 90, 75, "solid", "black");
+
+rectangleSvg(360, 170, 60, 70, "solid", "darkgrey");
+
+circleSvg(175, 230, 75, "solid", "darkblue");

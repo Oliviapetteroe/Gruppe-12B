@@ -5,7 +5,7 @@ const rectangle = function (left, top, width, height, mode, color) {
 	const ctx = canvas.getContext("2d");
 
 	ctx.fillStyle = color;
-	ctx.fillRect(top, left, width, height);
+	ctx.fillRect(left, top, width, height);
 };
 
 const circle = function (centerleft, centertop, radius, mode, color) {
@@ -14,13 +14,13 @@ const circle = function (centerleft, centertop, radius, mode, color) {
 
 	ctx.fillStyle = color;
 	ctx.beginPath();
-	ctx.ellipse(centertop, centerleft, radius, radius, 0, 180, 180);
+	ctx.ellipse(centerleft, centertop, radius, radius, 0, 180, 180);
 	ctx.fill();
 };
 
 // SVG funksjoner
 
-const rectangleSvg = function (left, top, width, height, color) {
+const rectangleSvg = function (left, top, width, height, mode, color) {
 	const svgDoc = document.getElementById("svg");
 
 	const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
@@ -33,7 +33,7 @@ const rectangleSvg = function (left, top, width, height, color) {
 	svgDoc.appendChild(rect);
 };
 
-const circleSvg = function (centerleft, centertop, radius, color) {
+const circleSvg = function (centerleft, centertop, radius, mode, color) {
 	const svgDoc = document.getElementById("svg");
 
 	const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
