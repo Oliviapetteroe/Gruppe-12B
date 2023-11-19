@@ -1,0 +1,282 @@
+sirkel1 = circle(10, "solid", "black")
+sirkel2 = circle(20, "solid", "red")
+sirkel3 = circle(30, "solid", "green")
+sirkel4 = circle(40, "solid", "blue")
+sirkel5 = circle(50, "solid", "orange")
+grunnflate = rectangle(530, 300, "solid", "white")
+
+
+#steg 0
+overlay((sirkel1), 
+  overlay((sirkel2), 
+    overlay((sirkel3),
+      overlay((sirkel4),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+          
+          overlay-align("middle", "middle", (sirkel1),
+            #midt
+            
+            overlay-align("right", "middle", (sirkel1),
+              #høyre
+
+              (grunnflate))))))))
+
+
+
+#steg 1
+overlay((sirkel1),  
+    overlay((sirkel3),
+      overlay((sirkel4),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+        
+          overlay((sirkel1),
+          overlay-align("middle", "middle",(sirkel2),
+            #midt
+            
+            overlay-align("right", "middle", (sirkel1),
+              #høyre
+
+              (grunnflate))))))))
+
+
+#steg 2
+overlay((sirkel1),  
+      overlay((sirkel4),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+      
+          overlay((sirkel1),
+          overlay-align("middle", "middle",(sirkel2),
+          #midt
+          
+          overlay((sirkel1),
+            overlay-align("right", "middle",(sirkel3),
+            #høyre
+
+              (grunnflate))))))))
+
+
+#steg 3
+overlay((sirkel1),  
+      overlay((sirkel4),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+      
+         
+        overlay-align("middle", "middle",(sirkel1),
+          #midt
+          
+          overlay((sirkel1),
+          overlay((sirkel2),
+            overlay-align("right", "middle",(sirkel3),
+            #høyre
+
+              (grunnflate))))))))
+
+
+#steg 4
+overlay((sirkel1),  
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+      
+         overlay((sirkel1), 
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+          overlay((sirkel1),
+          overlay((sirkel2),
+            overlay-align("right", "middle",(sirkel3),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 5
+overlay((sirkel1), 
+  overlay((sirkel2),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+      
+         overlay((sirkel1), 
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+
+          overlay((sirkel1),
+            overlay-align("right", "middle",(sirkel3),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 6
+overlay((sirkel1), 
+  overlay((sirkel2),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+      
+         overlay((sirkel1), 
+        overlay((sirkel3),
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+            overlay-align("right", "middle",(sirkel1),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 7
+overlay((sirkel1),
+        overlay-align("left", "middle", (sirkel5),
+          #venstre
+      
+         overlay((sirkel1), 
+      overlay((sirkel2),
+        overlay((sirkel3),
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+            overlay-align("right", "middle",(sirkel1),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 8
+  overlay-align("left", "middle", (sirkel1),
+          #venstre
+      
+         overlay((sirkel1), 
+      overlay((sirkel2),
+        overlay((sirkel3),
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+          overlay((sirkel1),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 9
+  overlay-align("left", "middle", (sirkel1),
+          #venstre
+      
+         overlay((sirkel1), 
+        overlay((sirkel3),
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+          overlay((sirkel1),
+          overlay((sirkel2),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 10
+overlay((sirkel1), 
+overlay-align("left", "middle", (sirkel3),
+          #venstre
+      
+         overlay((sirkel1), 
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+          overlay((sirkel1),
+          overlay((sirkel2),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 11
+overlay((sirkel1),
+  overlay((sirkel2),
+overlay-align("left", "middle", (sirkel3),
+          #venstre
+      
+         overlay((sirkel1), 
+      overlay-align("middle", "middle",(sirkel4),
+          #midt
+          
+          overlay((sirkel1),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 12
+overlay((sirkel1),
+  overlay((sirkel2),
+overlay-align("left", "middle", (sirkel3),
+          #venstre
+       
+        overlay-align("middle", "middle",(sirkel1),
+          #midt
+          
+          overlay((sirkel1),
+          overlay((sirkel4),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+#steg 13
+overlay((sirkel1),
+overlay-align("left", "middle", (sirkel3),
+          #venstre
+       
+    overlay((sirkel1),   
+      overlay-align("middle", "middle",(sirkel2),
+          #midt
+          
+          overlay((sirkel1),
+          overlay((sirkel4),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 14
+
+  overlay-align("left", "middle", (sirkel1),
+          #venstre
+       
+    overlay((sirkel1),   
+      overlay-align("middle", "middle",(sirkel2),
+          #midt
+          
+          overlay((sirkel1),
+        overlay((sirkel3),
+          overlay((sirkel4),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
+
+
+#steg 15
+
+  overlay-align("left", "middle", (sirkel1),
+          #venstre
+         
+    overlay-align("middle", "middle",(sirkel1),
+          #midt
+          
+          overlay((sirkel1),
+      overlay((sirkel2), 
+        overlay((sirkel3),
+          overlay((sirkel4),
+            overlay-align("right", "middle",(sirkel5),
+            #høyre
+
+                (grunnflate))))))))
