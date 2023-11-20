@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvek</title>
+    <link rel="stylesheet" href="anvek.css">
+</head>
+<body>
+    <header>
+        <div class="flexContainer">
+            <div class="flexTemplate">
+                <img src="images/anvek.png" class="picture">
+            </div>
+        
+            <div class="heading1">
+                <h1>Anve Kindem</h1>
+            </div>
+        </div>       
+    </header>
+    <main class="genInfo">
+        <div class="infoContainer">
+            <div>
+                <h2>Info</h2>
+                <p><b>Gruppe: </b>12B</p>
+                <p><b>Brukernavn: </b>Anvek</p>
+                <p><b>Alder: </b>22</p>
+                <b>Github repository med kode: </b> <a href="https://github.com/anvkin/IS114/tree/main/docs" target="_blank">Trykk her</a>
+            </div>
+        </div>
+
+        <div class="workDone">
+            <h2>Arbeid gjort gjennom semesteret:</h2>
+            <p>Under kommer en kort beskrivelse av arbeidet som er gjort dette semesteret, gruppedeler og individuelle deler. Kodene for de ulike delene vi har løst dette semesteret finner du i Github repositoryen som er linket over i infodelen.</p>
+            <h3>HanoiTårnet: ProgOblig 1, gruppedel</h3>
+            <p>Hanoitårnet er et matematisk spill som inneholder 3 pinner med x antall ringer på. Målet med spillet er å flytte alle ringene fra pinne A til pinne C. I oppgaven ble Pyret brukt for å programmere hanoitårnet med 4 ringer. Her er minimum anntall trekk 15. Under kan du se initiell tilstand og endelig tilstand</p>
+        </div>    
+
+        <div class="imgContainer">
+            <div class="hanoiSteg">
+                <img src="images/hanoiSteg0.png" alt="hanoiInitPosisjon">
+                <p>Steg 0, alle ringer på pinne A</p>
+            </div>
+            <div class="hanoiSteg">
+                <img src="images/hanoiSteg15.png" alt="hanoiFinalPosisjon">
+                <p>Steg 15, alle ringer på pinne C</p>
+            </div>
+        </div>
+        <div>
+            <h3>Norgeflagg: Progoblig 1, individuell del</h3>
+            <p>Dette er den individuelle delen av ProgOblig1 hvor det hele gikk ut på å svare på oppgaver om forskjell mellom Pyret og Javascript, for så å programmere Norge sitt flagg i Pyret. Dette ble gjort og flagget er lagt ved som et bilde under.</p>
+        </div>
+        <div>
+            <img src="images/norgeFlagg.png" alt="norgeFlagg" class="norgeFlagg">
+        </div> 
+          
+            <canvas id="canvas" width="200px" height="200px">
+            </canvas>
+    </main>
+    <script src="figures.js"></script>
+    <script src="anvek.js"></script>
+</body>
+</html>
