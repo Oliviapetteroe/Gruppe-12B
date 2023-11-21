@@ -21,6 +21,7 @@ div {
   #div1{
     border: 3px solid #ffffff;
     background-color: rgb(35, 201, 159);
+    column-count: 2;
 
   }
   
