@@ -1,24 +1,24 @@
 //Canvas
 
-circle(300, 200, 50, "solid", "red");
+circle(300, 200, 50, "solid", "red", "canvasIngri");
 
-circle(50, 200, 50, "solid", "red");
+circle(50, 200, 50, "solid", "red","canvasIngri");
 
-circle(175, 200, 75, "solid", "yellow");
+circle(175, 200, 75, "solid", "yellow","canvasIngri");
 
-rectangle(350, 350, 400, 450, "solid", "pink");
+rectangle(350, 350, 400, 450, "solid", "pink","canvasIngri");
 
 
 
 //SVG
 
-circleSvg(300, 200, 50, "solid", "red");
+circleSvg(300, 200, 50, "solid", "red","svgIngri");
 
-circleSvg(50, 200, 50, "solid", "red");
+circleSvg(50, 200, 50, "solid", "red","svgIngri");
 
-circleSvg(175, 200, 75, "solid", "yellow");
+circleSvg(175, 200, 75, "solid", "yellow","svgIngri");
 
-rectangleSvg(320, 390, 90, 75, "solid", "pink");
+rectangleSvg(320, 390, 90, 75, "solid", "pink","svgIngri");
 
 
 
