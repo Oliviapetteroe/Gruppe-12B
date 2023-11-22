@@ -1,0 +1,59 @@
+#start by adding lists for each pole, with a list called "hanoi" including all of the lists
+
+include lists
+
+A = [list: 1, 2, 3, 4]
+B = [list:]
+C = [list:]
+
+hanoi = [list: A, B, C]
+
+#list for logging the moves.
+moveLog = [list:]
+
+#function to define what is a valid move or not
+fun isMoveValid(startPole, endPole):
+  ask:
+    |hanoi[startPole].is-empty  then: false
+    |hanoi[endPole].is-empty or (hanoi[startPole].last < hanoi[endPole].last) then: true
+    |otherwise: false
+  end
+end
+
+#function to move a disk from one pole to another
+fun moveDisk(startPole, endPole):
+  if isMoveValid(startPole, endPole):
+    block:
+    disk = hanoi[startPole].pop
+    hanoi[endPole].push(disk)
+    print("Moved disk from " + startPole + " to " + endPole)
+    end
+  else:
+    print("Move is invalid")
+  end
+end
+
+#function to check if the hanoi puzzle is solved
+fun checkSolved():
+  ask:
+    |(hanoi.get(0) == [list:]) and (hanoi.get(1) == [list:]) and (hanoi.get(2) == [list: 4, 3, 2, 1]) then: true
+    |otherwise: false
+  end
+end
+
+#main loop of the game
+fun playGame():
+  if checkSolved() == false:
+    block: 
+    startPole = print("Enter the start pole (A, B, C): ")
+    endPole = print("Enter the end pole (A, B, C): ")
+      moveDisk(startPole, endPole)
+      
+    end
+  else:
+    block:
+  print("Congratulations! You solved it.")
+      print("Move Log: " + tostring(moveLog))
+    end
+   end
+  end
