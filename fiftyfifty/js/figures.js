@@ -1,15 +1,15 @@
 
 // Canvas funksjoner
-const rectangle = function (left, top, width, height, mode, color) {
-	const canvas = document.getElementById("canvas");
+const rectangle = function (left, top, width, height, mode, color, canvasID) {
+	const canvas = document.getElementById(canvasID);
 	const ctx = canvas.getContext("2d");
 
 	ctx.fillStyle = color;
 	ctx.fillRect(left, top, width, height);
 };
 
-const circle = function (centerleft, centertop, radius, mode, color) {
-	const canvas = document.getElementById("canvas");
+const circle = function (centerleft, centertop, radius, mode, color, canvasID) {
+	const canvas = document.getElementById(canvasID);
 	const ctx = canvas.getContext("2d");
 
 	ctx.fillStyle = color;
@@ -20,8 +20,8 @@ const circle = function (centerleft, centertop, radius, mode, color) {
 
 // SVG funksjoner
 
-const rectangleSvg = function (left, top, width, height, mode, color) {
-	const svgDoc = document.getElementById("svg");
+const rectangleSvg = function (left, top, width, height, mode, color, svgID) {
+	const svgDoc = document.getElementById(svgID);
 
 	const rect = document.createElementNS("http://www.w3.org/2000/svg", "rect");
 	rect.setAttributeNS(null, "x", left);
@@ -33,8 +33,8 @@ const rectangleSvg = function (left, top, width, height, mode, color) {
 	svgDoc.appendChild(rect);
 };
 
-const circleSvg = function (centerleft, centertop, radius, mode, color) {
-	const svgDoc = document.getElementById("svg");
+const circleSvg = function (centerleft, centertop, radius, mode, color, svgID) {
+	const svgDoc = document.getElementById(svgID);
 
 	const circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
 	circle.setAttributeNS(null, "cx", centerleft);
