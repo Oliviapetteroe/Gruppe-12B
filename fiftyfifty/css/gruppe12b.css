@@ -1,0 +1,55 @@
+/*endrer stilen på body- elementet. Gjør at alt får en bakgrunnsfarge, at det er lik font og at teksten generelt sett er alignet til venstre*/
+body {
+    background-color: #DBEFF7;
+    font-family: Georgia, serif;
+    text-align: left;
+  }
+
+/*Endrer stilen på H1 på hver enkelt side. Dette gjør at overskriften kommer sentralt*/
+h1{
+    text-align: center;
+    padding: 50px;
+  }
+
+/*gjør at for hvert p-element vil være 10px til borderen*/
+p{
+    padding: 10px;
+  }
+
+/*dette endrer stilen på hver av div-elementen. Gjør at inndelingene blir tydelige, med egen bakgrunnsfarge, lik border osv.*/
+div {
+    width: 90%;
+    background-color: #8fe8c9;
+    border: 3px solid #ffffff;
+    margin: 5px;
+    padding: 10px;
+    text-align: left;
+  }
+
+/*en id som er brukt på enkelte av privatsidene for aligning med column- count. de får også en egen bakgrunnsfarge*/
+#div1{
+    border: 3px solid #ffffff;
+    background-color: rgb(35, 201, 159);
+    column-count: 2;
+
+  }
+
+/*til menyen man kan navigere gjennom sidene*/
+#meny {
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+/*for figurene på hovedsida. Deler sida i 2 med grid, for å få plass til 2 figurer på siden av hverandre*/
+.figurStil{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border-bottom: 10px solid white;
+  }
+
+/*samme som over, men rundt hvert bilde med tekst over*/
+.figur{
+    text-align: center;
+  }
